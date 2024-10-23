@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyucbgyuxxq83"]
+
+[ext_resource type="Texture2D" uid="uid://dkkrpnyvj8qhf" path="res://icon.svg" id="1_cf3d8"]
+[ext_resource type="PackedScene" uid="uid://dqb2l1sgpdp1c" path="res://scenes/player/player.tscn" id="3_mtahe"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Logo" type="Sprite2D" parent="."]
+texture = ExtResource("1_cf3d8")
+region_rect = Rect2(0, 0, 128, 128)
+
+[node name="Player" parent="Logo" instance=ExtResource("3_mtahe")]
+position = Vector2(380, 338)
